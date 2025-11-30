@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(173, 173, 201);
+}
+main {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+header {
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(194, 194, 216);
+  text-align: center;
+  display: flex;
+  width: 100vw;
+  height: 84px;
+  border: solid 1px black;
+}
+.logo-bookstore {
+  width: auto;
+  height: 148px;
+}
+h2 {
+  color: rgb(21, 51, 93);
+}
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.book-article {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgb(173, 173, 201);
+  margin: 24px;
+  padding: 16px;
+  width: 80vw;
+}
+.img-book {
+  height: 200px;
+  width: 200px;
+}
+.main-footer {
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(194, 194, 216);
+  text-align: center;
+  display: flex;
+  width: 100vw;
+  height: 84px;
+  border: solid 1px black;
+  margin-bottom: 0;
+}
