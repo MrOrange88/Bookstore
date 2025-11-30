@@ -9,7 +9,7 @@ main {
   align-items: center;
   gap: 32px;
 }
-header {
+.main-header {
   justify-content: center;
   align-items: center;
   background-color: rgb(194, 194, 216);
@@ -17,7 +17,8 @@ header {
   display: flex;
   width: 100vw;
   height: 84px;
-  border: solid 1px black;
+  border-radius: 15px;
+  box-shadow: 2px 4px 8px 2px rgb(116, 116, 237);
 }
 .logo-bookstore {
   width: auto;
@@ -31,12 +32,27 @@ article {
   flex-direction: column;
   align-items: center;
 }
+header {
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 4px 8px 2px rgb(114, 114, 132);
+  width: 50vw;
+  border-radius: 12%;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  box-shadow: 2px 4px 8px 2px rgb(114, 114, 132);
+}
 .book-article {
+  margin-top: 24px;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgb(173, 173, 201);
+
   margin: 24px;
   padding: 16px;
-  width: 80vw;
+  width: 50vw;
 }
 .img-book {
   height: 200px;
@@ -50,6 +66,8 @@ article {
   display: flex;
   width: 100vw;
   height: 84px;
-  border: solid 1px black;
+  border-radius: 15px;
+  box-shadow: 0px -5px 10px rgb(116, 116, 237);
   margin-bottom: 0;
+  position: fixed;
 }

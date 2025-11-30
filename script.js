@@ -10,9 +10,3 @@ function render() {
     container.innerHTML += getBookTemplate(index);
   }
 }
-function addBookField(index, field) {
-  const element = document.getElementById(field + index);
-  if (element && books[index][field] !== undefined) {
-    element.innerHTML = books[index][field];
-  }
-}
