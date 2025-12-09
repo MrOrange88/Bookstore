@@ -1,12 +1,36 @@
-function init(index) {
-  render(index);
+function init() {
+  render();
 }
 
 function render() {
   const container = document.getElementById("article_content");
-  container.innerHTML += "";
+  container.innerHTML = "";
 
-  for (let index = 0; index < books.length; index++) {
-    container.innerHTML += getBookTemplate(index);
+  for (let i = 0; i < books.length; i++) {
+    container.innerHTML += getBookTemplate(i);
   }
+}
+
+function addComment(index) {
+  const nameInput = document.getElementById("nameInput" + index);
+  const commentInput = document.getElementById("commentInput" + index);
+
+  const name = nameInput.value.trim();
+  const comment = commentInput.value.trim();
+
+  if (name === "" || comment === "") {
+    return;
+  }
+
+  const newComment = {
+    name: name,
+    comment: comment,
+  };
+
+  books[index].comments.push(newComment);
+
+  nameInput.value = "";
+  commentInput.value = "";
+
+  render();
 }

@@ -22,7 +22,7 @@ function getBookTemplate(index) {
         <img class="img-book" src="./img/book trans.png" alt="Bild von einem Buch">
       </section>
 
-      <section>
+      <section class="price-likes">
         <p>${book.price} €</p>
         <p>${book.likes} likes</p>
       </section>
@@ -33,9 +33,14 @@ function getBookTemplate(index) {
         <p>Genre: <span>${book.genre}</span></p> 
       </section>
 
-      <section>
+      <section id="commentsSection">
         <h2>Kommentare:</h2>
         ${commentsHTML}
+      </section>
+      <section class="add-comment">
+      <input type="text" id="nameInput${index}" placeholder="Dein Name">
+      <input type="text" id="commentInput${index}" placeholder="Dein Kommentar">
+      <button onclick="addComment(${index})">Kommentar hinzufügen</button>
       </section>
 
       <footer></footer>
