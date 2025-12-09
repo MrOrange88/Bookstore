@@ -25,6 +25,9 @@ function getBookTemplate(index) {
       <section class="price-likes">
         <p>${book.price} €</p>
         <p>${book.likes} likes</p>
+        <button class="like-button" onclick="toggleLike(${index})" class="like-button">${
+    book.liked ? "❤️" : "🤍"
+  }</button>
       </section>
 
       <section>

@@ -34,3 +34,10 @@ function addComment(index) {
 
   render();
 }
+function toggleLike(index) {
+  const book = books[index];
+  book.liked = !book.liked;
+  book.likes += book.liked ? 1 : -1;
+
+  render();
+}
